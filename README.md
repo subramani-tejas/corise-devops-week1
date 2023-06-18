@@ -96,3 +96,16 @@ def test_add():
 ### 'initial_starter_code' contains the inital code to start with
 ### 'test' - The state of the project with a wrong test added for reference - this is supposed to fail the merge to master process in our workflow
 </br>
+
+## My additions
+<br> 
+### Adding test coverage report
+pip install pytest-cov
+python -m pytest --cov calculator tests/
+python -m pytest --cov-report html --cov calculator tests/
+</br>
+
+<br>
+### GitHub Actions: Pytest Coverage Comment
+python -m pytest --cov-report "xml:coverage.xml" --cov calculator tests/
+</br>
